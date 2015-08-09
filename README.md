@@ -89,7 +89,7 @@ app/                    --> all of the source files for the application
 ## Using Grunt
 
 After starting the local server, run `grunt` in your terminal. This will launch the `watch` tasks
-which is comipiling all your sass/scss files into one file in `assets/css/main.css`
+which is compiling all your sass/scss files into one file in `assets/css/main.css`
 
 ### Minify CSS
 
