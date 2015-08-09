@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular Scale Framework</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- In production use:
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!--[if lt IE 7]>
+      <p class="outdatedbrowser">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+<div ui-view="header"></div>
+
+<div class="container">
+  <div ui-view="content"></div>
+</div>
+
+<div ui-view="footer"></div>
+
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <!-- In production use:
+  <script src="assets/js/scripts.min.js"></script>
+  -->
+
+  <script src="app.js"></script>
+  <script src="components/directives/directive.js"></script>
+  <script src="components/factories/factory.js"></script>
+  <script src="components/services/service.js"></script>
+  <script src="components/resources/resource.js"></script>
+  <script src="partials/footer/footer.js"></script>
+  <script src="partials/header/header.js"></script>
+  <script src="modules/home/home.js"></script>
+  <script src="modules/account/account.js"></script>
+  <script src="modules/account/view1/view1.js"></script>
+  <script src="modules/account/view2/view2.js"></script>
+  <script src="modules/dashboard/dashboard.js"></script>
+  <script src="modules/dashboard/view1/view1.js"></script>
+  <script src="modules/dashboard/view2/view2.js"></script>
+</body>
+</html>

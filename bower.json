@@ -1,0 +1,12 @@
+{
+  "name": "angular-scale",
+  "description": "Framework for easily scalable angular apps",
+  "version": "0.0.0",
+  "homepage": "https://github.com/razvanbalosin/angular-scale",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.14"
+  }
+}
