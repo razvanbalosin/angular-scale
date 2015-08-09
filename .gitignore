@@ -1,0 +1,9 @@
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+app/js/annotated
+tmp
+.DS_Store
+.sass-cache
+.idea
