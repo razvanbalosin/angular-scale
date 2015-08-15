@@ -118,6 +118,61 @@ grunt uglify
 this will minify and mangle all your javascript files then again, just follow the instructions in
 `index.html` on how to load the minified js file.
 
+## Enabling HTML5 Mode
+
+Enabling HTML5 Mode (removing the '#' in URL's) requires server side rewriting. The following only applies
+for `nginx`, if your app runs on another server, please refer to the UI Router [doccumentation](https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-configure-your-server-to-work-with-html5mode)
+
+If you don't have nginx installed, you can get it from [nginx.org](http://nginx.org/en/download.html).
+
+Firstly, in `app.js`, you'll have to enable html5 mode:
+
+```
+    function AppConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
+      $locationProvider.html5Mode(true);
+      //
+      //
+      //
+    }
+```
+
+As html5 mode requires a base href, in `index.html`, add:
+
+
+```
+<base href="/" />
+```
+
+
+Now, to enable Nginx Rewrites, locate `nginx.conf` file on your machine and set it up like this:
+
+
+```
+server {
+    server_name my-app;
+
+    root /path/to/app;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
+```
+
+
+After you have finished configuring html5 mode, you can start the nginx server by typing:
+
+
+```
+nginx
+```
+
+
+Now browse to the app at `http://localhost:8000/` (or whatever port you have specified in your nginx configuration file)
+
+
+
+
 ## Updating Angular
 
 You can update the tool dependencies by running:
