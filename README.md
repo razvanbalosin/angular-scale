@@ -1,6 +1,6 @@
 # Angular Scale — A project skeleton to support apps that grow
 
-This project is an application skeleton for a [AngularJS](http://angularjs.org/) web app that will be easily scalable, built with [UI Router](//github.com/angular-ui/ui-router) and code following the opinionated Angular [style guide](//github.com/johnpapa/angular-styleguide#angular-style-guide) for teams by [John Papa](//twitter.com/John_Papa)
+This project is an application skeleton for an [AngularJS](http://angularjs.org/) web app that will be easily scalable, built with [UI Router](//github.com/angular-ui/ui-router) and code following the opinionated Angular [style guide](//github.com/johnpapa/angular-styleguide#angular-style-guide) for teams by [John Papa](//twitter.com/John_Papa)
 
 The package contains a sample AngularJS application and is preconfigured to install the Angular
 framework and a bunch of development tools for instant web development.
